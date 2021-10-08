@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes Lab 2</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/penguin.png"/>
+
+    <!-- font!! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1> <u>Meeting Minutes!!</u></h1>
 
-        <h3>Topic: Brainstorm add-ons for Android App</h3>
+        <!-- including inline css right here for the header -->
+        <h1 style="color: rgb(14, 116, 82); text-align: center; font-size: 7rem;"> <u>Meeting Minutes!!</u></h1>
+
+        <h3 class="topic">Topic: Brainstorm add-ons for Android App</h3>
 
         <nav>
-            <a href="https://www.google.com/">Goog</a>
-            <a href="https://www.youtube.com/">Utub</a>
-            <a href="https://ucsd.edu/">Skewl</a>
+            <a class="navbar-links" href="https://www.google.com/">Goog</a>
+            <a class="navbar-links" href="https://www.youtube.com/">Utub</a>
+            <a class="navbar-links" href="https://ucsd.edu/">Skewl</a>
         </nav>
     </header>
 
     <hr>
     
     <div class="date-time">
-    <table>
+    <table class="table">
         <tr>
             <th>Date:</th>
             <td>10/2/21</td>
@@ -46,20 +55,20 @@
     <hr>
     
     <section>
-        <h2> <b><u>Attendees:</u></b> </h2>
+        <h2 class="attendees"> <b><u>Attendees:</u></b> </h2>
         <ol>
-            <li> <strong> Amjad Al-Omar </strong> </li>
-            <li>Bob the Builder</li>
-            <li>Danny Phantom</li>
-            <li>Dark Pit</li>
-            <li> <b> Legen </b> <br> <i> wait for it </i> <br> <b> dary </b></li>
+            <li class="attendees-names"> <strong> Amjad Al-Omar </strong> </li>
+            <li class="attendees-names">Bob the Builder</li>
+            <li class="attendees-names">Danny Phantom</li>
+            <li class="attendees-names">Dark Pit</li>
+            <li class="attendees-names"> <b> Legen </b> <br> <i> wait for it </i> <br> <b> dary </b></li>
         </ol>
 
     </section>
 
     <section>
-        <h2> <b><u>Agenda:</u></b> </h2>
-        <ol type="I">
+        <h2 class="agenda"> <b><u>Agenda:</u></b> </h2>
+        <ol type="agenda-list">
             <li>Go over last meetings unfinished business</li>
             <li>Introduce new interns working with us</li>
             <li>Wish Happy Birthday to Bill <em>(happy birthday bill!!)</em></li>
@@ -68,8 +77,8 @@
         </ol>
     </section>
 
-    <section>
-        <h2> <b><u>Unfinished Business:</u></b> </h2>
+    <section class="unfin-business">
+        <h2 class="unfin-business-title"> <b><u>Unfinished Business:</u></b> </h2>
         <ul>
             <li>Finalize orders for team shirt and design</li>
             <li>Vote on App Logo Design</li>
@@ -77,37 +86,39 @@
     </section>
 
     <section>
-        <h2> <b><u>New Action Items:</u></b> </h2>
-        <ul>
-            <li>Vote on Calendar Design</li>
-            <li>Discuss themes for dark mode (gold and black??)</li>
-            <li>Check on interns progress on their projects</li>
-            <li>Ask about what is the best thing to eat for lunch</li>
+        <h2 class="new-action-item"> <b><u>New Action Items:</u></b> </h2>
+        <ul class="action-item-list">
+            <li id="item-list">Vote on Calendar Design</li>
+            <li id="item-list">Discuss themes for dark mode (gold and black??)</li>
+            <li id="item-list">Check on interns progress on their projects</li>
+            <li id="item-list">Ask about what is the best thing to eat for lunch</li>
         </ul>
     </section>
 
 
     <section>
         <hr>
-        <h2> <b>Additional Questions & Comments:</b> </h2>
+        <h2 class="add-qs-and-as"> <b>Additional Questions & Comments:</b> </h2>
         <ul>
-            <li>What does the fox say?</li>
-            <li>Rihanna is good singer</li>
-            <li>Bill had such a fun birthday party</li>
-            <li>Heres the beginning of todays meeting</li>
-            <li><audio controls> <source src="video/audiofile.mp3" type="audio/mpeg"></audio></li>
+            <li class="qslist">What does the fox say?</li>
+            <li class="qslist">Rihanna is good singer</li>
+            <li class="qslist">Bill had such a fun birthday party</li>
+            <li class="qslist">Heres the beginning of todays meeting</li>
+            <li class="audio-file"><audio controls> <source src="video/audiofile.mp3" type="audio/mpeg"></audio></li>
             <li><video width="240" height="240" controls><source src="video/videofile.mp4" type="video/mp4"></video></li>
         </ul>
+
+        
         <hr>
     </section>
 
     <section class="add-ons-lab">
 
-        <h2>Additional Items to get full credit on this lab!!</h2>
+        <h2 class="adds-for-full-credit">Additional Items to get full credit on this lab!!</h2>
 
-        <h4>Deatils/Summary</h4>
+        <h4 style="padding: 1em 1em 1em 1em;">Deatils/Summary</h4>
 
-        <details>
+        <details class="details-vine">
             <summary>Vines that make me laugh</summary>
             <p>
                 <b>
@@ -116,16 +127,16 @@
             </p>
         </details>
 
-        <details>
+        <details class="details-pic">
             <summary>Cool Background Pic</summary>
             <img src="images/background.jpg" alt="A picture of a galaxy in neon purple and blue">
         </details>
 
         <br>   
 
-        <h4>Form Stuff</h4>
+        <h4 class="form-styles">Form Stuff</h4>
 
-        <form action="https://www.google.com/">
+        <form action="https://www.google.com/" class="form-layout">
             <div>
                 <label for="username">Username:</label>
                 <input type="text" name="username" id="username">
@@ -196,7 +207,7 @@
     </section>
 
     <footer>
-        <h3>Footer!!</h3>
+        <h3 class="footer">Footer!!</h3>
         <p>Thanks for coming! Dont forget to be awesome and such!</p>
         <span> <b> <i> Onions? </i> </b> </span>
 
