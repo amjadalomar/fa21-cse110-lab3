@@ -1,0 +1,155 @@
+/* giving the background of the document a nice lavendar color */
+body {
+    background-color: lavenderblush;
+}
+
+/* adding font */
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+/* media query!! */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* even spacing and margins to easily tell the difference between each section */
+hr {
+    margin: 2em 0 2em 0;
+}
+
+/* styling navbar links to be blue and large for easy navigation */
+nav{
+    text-align: center;
+    position: sticky;
+
+}
+
+.navbar-links {
+    position: sticky;
+    color: hsl(231, 100%, 62%);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 1cm;
+}
+
+/* I added the position fixed thing to this so it would work
+    but it made me laugh so much that im leaving it in im sorry but also its so funny
+ */
+.topic {
+    border-radius: 20%;
+    border-style: double;
+    position: fixed;
+    text-align: center;
+    text-shadow: lawngreen;
+    font-size: .40in;
+    color: #358a43;
+}
+
+.date-time {
+    /* short margin */
+    margin: 1em 0 0 1em;
+
+}
+
+tr {
+    /* long padding */
+    padding-left: 0rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    /* here is the display grid stuff */
+    display: grid;
+    max-width: 10rem;
+    max-height: 10rem;
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+}
+
+/* adding the same color to all 4 main h2 titles in second section of html doc */
+.attendees, .agenda, .unfin-business-title, .new-action-item {
+    /* rgb colors */
+    color: rgb(235, 64, 52);
+}
+
+.attendees-names {
+    /* hsl color */
+    color:hsl(288, 69%, 49%)
+}
+
+#item-list {
+    /* fun border attempts lol */
+    border-style: dotted;
+    border-color: khaki;
+    border-width: 1mm;
+    border-radius: 1em;
+}
+
+
+/* same thing as the topic positon css attribute. it looks so stupid I love it */
+.add-qs-and-as {
+    color: rgb(11, 154, 236);
+    position: absolute;
+}
+
+.qslist {
+    border-color: indigo;
+    border-style: groove;
+
+    /* attempts at flex display */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.adds-for-full-credit {
+    color: mediumblue;
+    height: 50mm;
+    display: inline;
+}
+
+.form-styles {
+    color: lightskyblue;
+    font-family: myFirstFont;
+    padding: .5cm 0 .5cm .5cm;
+    height: 3mm;
+    width: 3mm;
+    text-decoration: lightcoral;
+    text-align: center;
+}
+
+.form-layout {
+    display: block;
+}
+
+.details-vine, .details-pic {
+    padding: .5cm 0 .5cm .5cm;
+}
+
+.details-vine:active, .details-pic:active {
+    color:hsl(231, 100%, 62%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    margin: auto;
+    display: block;
+}
+
+button {
+    background: mediumvioletred;
+}
+
+button:hover {
+    background-color: mediumpurple;
+}
