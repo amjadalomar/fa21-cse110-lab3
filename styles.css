@@ -1,4 +1,9 @@
 /* giving the background of the document a nice lavendar color */
+* {
+    background: lavenderblush;
+    border-color: lightcoral;
+}
+
 body {
     background-color: lavenderblush;
 }
@@ -36,6 +41,10 @@ nav{
     margin-top: 1vh;
     margin-bottom: 1vh;
     font-size: 1cm;
+}
+
+a[href*="https://www.google.com/"] {
+  color: rgb(5, 97, 20);
 }
 
 /* I added the position fixed thing to this so it would work
@@ -85,6 +94,21 @@ tr {
     color:hsl(288, 69%, 49%)
 }
 
+.unfin-business * {
+    color: lightseagreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2.agenda {
+    color: mediumpurple;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section > ol[class="agenda-list"] > li {
+    font-weight: 500;
+    color: limegreen;
+}
+
 #item-list {
     /* fun border attempts lol */
     border-style: dotted;
@@ -132,6 +156,15 @@ tr {
     display: block;
 }
 
+input + label {
+    background-color: mediumseagreen;
+}
+
+label ~ input {
+    background-color: midnightblue;
+    color: white;
+}
+
 .details-vine, .details-pic {
     padding: .5cm 0 .5cm .5cm;
 }
@@ -153,3 +186,4 @@ button {
 button:hover {
     background-color: mediumpurple;
 }
+
